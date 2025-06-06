@@ -42,15 +42,16 @@ const [review, setReview] = useState(``)
             onValueChange={code => setcode(code)}
             highlight={code => prism.highlight(code, prism.languages.js)}
             padding={10}
-            style={{
+            style={
+              {
               fontFamily: '"Fira code", "Fira Mono", monospace',
               fontSize: 12,
               border: '1px solid #dddddd',
               borderRadius: '5px',
               height: '100%',
-              width: '100%',
-              
-            }}
+              width: '100%', 
+            }
+            }
           />
         </div>
         <div 
